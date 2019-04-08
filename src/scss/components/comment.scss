@@ -1,0 +1,29 @@
+.comment {
+  display: flex;
+  margin-top: 120px;
+
+  & + .comment {
+    margin-top: 40px;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 24px;
+    width: 64px;
+
+    object-fit: cover;
+  }
+
+  &__text,
+  &__author {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  &__author {
+    color: rgba(255, 255, 255, .6);
+    margin-top: 16px;
+  }
+}

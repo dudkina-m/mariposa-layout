@@ -1,10 +1,9 @@
 @import 'global';
 
 body {
-  background: #fff;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   width: 100%;
@@ -12,33 +11,61 @@ body {
 
 .content {
   flex-grow: 1;
+  position: relative;
   width: 100%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1156px;
   width: 100%;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px -15px 0;
+.section {
+  background: #fff center top;
+  min-height: 100vh;
 
-  &__item {
-    padding: 0 15px 30px 15px;
-    width: 50%;
+  &__content {
+    width: 100%;
+  }
 
-    &_4 {
-      padding: 0 15px 30px 15px;
-      width: 25%;
+  &__first {
+    background-image: url('../img/first-bg.jpg');
+    color: #000;
+
+    .section__content {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 67.4%, #000 100%);
+      padding-bottom: 100px;
+    }
+  }
+
+  &__second {
+    background-image: url('../img/second-bg.jpg');
+
+    .section__content {
+      background: linear-gradient(180deg, rgba(0, 0, 0, .7) 24.31%, rgba(0, 0, 0, 0) 73.48%), linear-gradient(180deg, rgba(0, 0, 0, 0) 84.53%, #000 100%);
     }
   }
 }
 
-.content {
-  &__flex-start {
-    justify-content: flex-start;
+a,
+button {
+  @include transition();
+}
+
+.title {
+  color: #fff;
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 77px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+
+  & + p {
+    margin-top: 16px;
   }
-}
+}

@@ -1,0 +1,12 @@
+.link {
+  border-bottom: 2px solid rgba(253, 180, 97, .82);
+  color: rgba(253, 180, 97, .82);
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: .7;
+  }
+}

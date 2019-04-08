@@ -1,0 +1,53 @@
+.btn {
+  background-color: rgba(253, 180, 97, .82);
+  border: 2px solid rgba(253, 180, 97, .82);
+  border-radius: 8px;
+  color: rgba(62, 34, 3, .82);
+  font-size: 18px;
+  font-weight: 600;
+  height: 51px;
+  width: 150px;
+
+  &:hover {
+    background-color: transparent;
+    color: rgba(62, 34, 3, .82);
+  }
+
+  &_bordered {
+    background-color: transparent;
+    border-color: rgba(62, 34, 3, .82);
+    color: rgba(62, 34, 3, .82);
+
+    &:hover {
+      background-color: rgba(62, 34, 3, .82);
+      color: #fff;
+    }
+  }
+
+
+  &_thin {
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    padding: 3px 10px;
+    width: auto;
+  }
+
+  &_light {
+    border-color: rgba(253, 180, 97, .82);
+    color: rgba(253, 180, 97, .82);
+
+    &:hover {
+      background-color: rgba(253, 180, 97, .82);
+      color: #fff;
+    }
+  }
+
+  &_dark {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
